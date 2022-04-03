@@ -1,9 +1,11 @@
+import pytz
 from datetime import datetime
 import requests
 from requests_html import HTML
 import time
 
-now = datetime.now()
+tz = pytz.timezone("Europe/Helsinki")
+now = datetime.now(tz)
 timestamps = now.strftime("%d/%m/%Y %H:%M:%S")
 
 base_url = "https://stackoverflow.com/questions/tagged/"

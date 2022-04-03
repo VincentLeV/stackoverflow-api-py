@@ -10,6 +10,7 @@ requests = "*"
 requests-html = "*"
 fastapi = "*"
 uvicorn = "*"
+pytz = "*"
 
 [dev-packages]
 
