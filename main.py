@@ -1,7 +1,7 @@
 from fastapi import FastAPI
+from scraper import extract_data
 from data.stackoverflow_python import questions as py
 from data.stackoverflow_javascript import questions as js
-
 
 app = FastAPI()
 
@@ -13,9 +13,11 @@ def root():
 
 @app.get("/api/python")
 def get_py_questions():
-    return py
+    data = extract_data(tags=["python"], max_pages=1)
+    return data
 
 
 @app.get("/api/javascript")
 def get_js_questions():
-    return js
+    data = extract_data(tags=["javascript"], max_pages=1)
+    return data
