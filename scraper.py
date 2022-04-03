@@ -1,15 +1,10 @@
-import os
 from datetime import datetime
 import requests
 from requests_html import HTML
 import time
 
-cwd = os.getcwd()
 now = datetime.now()
 timestamps = now.strftime("%d/%m/%Y %H:%M:%S")
-BASE_DIR = os.path.dirname(cwd)
-DATA_DIR = os.path.join(BASE_DIR, "data")
-os.makedirs(DATA_DIR, exist_ok=True)
 
 base_url = "https://stackoverflow.com/questions/tagged/"
 
