@@ -6,7 +6,7 @@
 <br/>
 
 
-# Stackoverflow API
+# Stack Overflow API
 
 ## Table of Contents
 
@@ -24,11 +24,11 @@
 
 ## Introduction
 
-This is an API that scrapes the newest unanswered question on Stackoverflow by tags.
-The API should work with any available tags on Stackoverflow. 
+This is an API that scrapes the newest unanswered question on Stack Overflow by tags.
+The API should work with any available tags on Stack Overflow. 
 
-With this API, user could check out the unanswered questions on Stackoverflow quickly without any hassle. 
-There is a link for each question that leads straight to Stackoverflow. 
+With this API, user could check out the unanswered questions on Stack Overflow quickly without any hassle. 
+There is a link for each question that leads straight to Stack Overflow. 
 
 The motivation behind this project is to practice Python, scraping the web and creating data pipeline skills.
 
