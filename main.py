@@ -17,7 +17,7 @@ app.add_middleware(
 
 
 @app.get("/")
-def root():
+async def root():
     return {
         "Information": {
             "API URL Prefix": "/api",
@@ -39,6 +39,6 @@ def root():
 #     return data
 
 @app.get("/api/{language}")
-def get_questions(language: str):
+async def get_questions(language: str):
     data = extract_data(tags=[language], max_pages=1)
     return data
